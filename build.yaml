@@ -44,3 +44,6 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
     artifact-name: xiao_reset_settings
+
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle_xiao prospector_adapter
