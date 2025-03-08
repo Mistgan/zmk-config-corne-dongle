@@ -8,7 +8,6 @@
 #include <dt-bindings/led/led.h>
 
 &kscan0 {
-    diode-direction = "col2row";
     row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
