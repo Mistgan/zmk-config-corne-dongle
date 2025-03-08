@@ -19,11 +19,11 @@
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &foostan_corne_6col_layout;
     };
 
-    mock_kscan:mock_kscan_0 {
+    kscan0: kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
