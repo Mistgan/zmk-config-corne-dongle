@@ -19,6 +19,12 @@
         rows = <0>;
         events = <0>;
     };
+
+    mock_underglow: mock_underglow {
+        compatible = "zmk,underglow-mock";
+        num-leds = <0>;
+        leds = <0>;
+    };
 };
 
 &mock_underglow {
