@@ -36,6 +36,10 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: nano_corne_right
 
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle prospector_adapter
+    artifact-name: prospector_dongle
+
   # reset_settings
   - board: nice_nano_v2
     shield: settings_reset
