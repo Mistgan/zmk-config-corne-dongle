@@ -21,7 +21,7 @@
 include:
   # Add custom dongle and a peripheral left corne
   - board: seeeduino_xiao_ble
-    shield: corne_dongle
+    shield: corne_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: xiao_dongle
@@ -35,10 +35,6 @@ include:
     shield: corne_right nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: nano_corne_right
-
-  - board: seeeduino_xiao_ble
-    shield: corne_dongle prospector_adapter
-    artifact-name: prospector_dongle
 
   # reset_settings
   - board: nice_nano_v2
