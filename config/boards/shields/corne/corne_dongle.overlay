@@ -9,7 +9,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,underglow = &mled_strip;
+        zmk,underglow = &led_strip;
         wakeup-source;
     };
 
