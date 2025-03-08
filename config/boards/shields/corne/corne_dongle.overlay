@@ -22,7 +22,8 @@
 
     mock_underglow: led_mock {
         compatible = "zmk,underglow-mock";
-        num-leds = <0>;
+        num-leds = <27>;
+        chain-length = <27>;
         leds = <0>;
     };
 };
