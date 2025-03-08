@@ -30,6 +30,8 @@ config ZMK_RGB_UNDERGLOW
 config ZMK_DISPLAY
     default y
 
+endif
+
 if ZMK_DISPLAY
 
 config I2C
