@@ -9,22 +9,30 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,underglow = &mock_underglow;
+        zmk,underglow = &mled_strip;
         wakeup-source;
     };
 
     mock_kscan: kscan_1 {
         compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
+        columns = <6>;
+        rows = <4>;
         events = <0>;
     };
 
-    mock_underglow: led_mock {
-        compatible = "zmk,underglow-mock";
-        num-leds = <27>;
-        chain-length = <27>;
-        leds = <0>;
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+
+        /* SPI */
+        reg = <0>; /* ignored, but necessary for SPI bindings */
+        spi-max-frequency = <4000000>;
+
+        /* WS2812 */
+        chain-length = <21>; /* arbitrary; change at will */
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
     };
 };
 
