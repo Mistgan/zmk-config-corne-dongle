@@ -20,15 +20,10 @@
         events = <0>;
     };
 
-    mock_underglow: mock_underglow {
+    mock_underglow: led_mock {
         compatible = "zmk,underglow-mock";
         num-leds = <0>;
         leds = <0>;
     };
 };
 
-&mock_underglow {
-    compatible = "zmk,underglow-mock";
-    num-leds = <0>;
-    leds = <0>;
-};
