@@ -72,23 +72,7 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <27>; /* arbitrary; change at will */
-        spi-one-frame = <0x70>;
-        spi-zero-frame = <0x40>;
-
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-    };
-};
-
-&spi1 {
-    status = "okay";
-
-    ws2812: ws2812@0 {
-        reg = <0>; /* ignored, but necessary for SPI bindings */
-        compatible = "worldsemi,ws2812-spi";
-        spi-max-frequency = <4000000>;
-
-        chain-length = <27>; /* Nombre de LEDs */
+        chain-length = <21>; /* arbitrary; change at will */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
@@ -98,7 +82,7 @@
 
 / {
     chosen {
-        zmk,underglow = &ws2812;
+        zmk,underglow = &led_strip;
     };
 };
 
