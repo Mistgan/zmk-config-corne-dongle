@@ -26,4 +26,5 @@ if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
 config ZMK_RGB_UNDERGLOW
     default y
     imply WS2812_STRIP
+
 endif
