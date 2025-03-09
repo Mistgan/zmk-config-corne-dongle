@@ -84,6 +84,7 @@
     status = "okay";
 
     ws2812: ws2812@0 {
+        reg = <0>; /* ignored, but necessary for SPI bindings */
         compatible = "worldsemi,ws2812-spi";
         spi-max-frequency = <4000000>;
 
