@@ -16,7 +16,7 @@ manifest:
       revision: main
     - name: zephyr
       remote: zephyrproject
-      revision: v3.6.0
+      revision: v4.1.0
       import: true
   self:
     path: config
