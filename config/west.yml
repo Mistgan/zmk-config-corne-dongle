@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    - name: zephyrproject
-      url-base: https://github.com/zephyrproject-rtos
+    # - name: zephyrproject
+    #   url-base: https://github.com/zephyrproject-rtos
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,9 +14,9 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
-    - name: zephyr
-      remote: zephyrproject
-      revision: main
-      import: true
+    # - name: zephyr
+    #   remote: zephyrproject
+    #   revision: main
+    #   import: true
   self:
     path: config
