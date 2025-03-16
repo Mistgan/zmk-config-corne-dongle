@@ -67,49 +67,49 @@
             bindings = <&kp N3>, <&kp LS(N3)>;
         };
 
-        td_n1: tap_dance_n4 {
+        td_n4: tap_dance_n4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N4>, <&kp LS(N4)>;  
         };
 
-        td_n1: tap_dance_n5 {
+        td_n5: tap_dance_n5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N5>, <&kp LS(N5)>;  
         };
 
-        td_n1: tap_dance_n6 {
+        td_n6: tap_dance_n6 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N6>, <&kp LS(N6)>;  
         };
 
-        td_n1: tap_dance_n7 {
+        td_n7: tap_dance_n7 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N7>, <&kp LS(N7)>;  
         };
 
-        td_n1: tap_dance_n8 {
+        td_n8: tap_dance_n8 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N8>, <&kp LS(N8)>;  
         };
 
-        td_n1: tap_dance_n9 {
+        td_n9: tap_dance_n9 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp N9>, <&kp LS(N9)>;  
         };
 
-        td_n1: tap_dance_n0 {
+        td_n0: tap_dance_n0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
@@ -269,11 +269,11 @@
                         display-name = "Lower";
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp FR_TILD   &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp F17
+                  &kp FR_TILD   &td_n1         &td_n2        &td_n3        &td_n4        &td_n5            &td_n6        &td_n7        &td_n8        &td_n9        &td_n0       &kp F17
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp GRAVE     &kp FR_EXLM    &kp FR_AT     &kp FR_HASH   &kp FR_DLR    &kp FR_PERC       &kp FR_CIRC   &kp FR_AMPR   &kp FR_STAR   &kp FR_LPRN   &kp FR_RPRN  &kp F18
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT      &trans         &trans        &trans      &kp LG(F11)   &kp LG(F12)         &trans       &trans         &trans        &trans        &trans       &kp F14
+                  &kp LSHFT      &trans        &trans        &trans      &kp LG(F11)   &kp LG(F12)         &trans       &trans         &trans        &trans        &trans       &kp F14
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                              &mo ADJ        &trans       &kp LGUI       &kp LC(BSPC)     &kp DEL     &kp LC(DEL)
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
