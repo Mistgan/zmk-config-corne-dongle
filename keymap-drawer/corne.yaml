@@ -1,236 +1,166 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  canary:
-  - $$mdi:keyboard-tab$$
-  - W
-  - L
-  - Y
-  - P
-  - K
-  - Z
-  - F
-  - O
-  - U
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - C
-  - R
-  - S
-  - T
-  - B
-  - X
-  - N
-  - E
-  - I
-  - A
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
-  - Q
-  - J
-  - V
-  - D
-  - G
-  - M
-  - H
-  - {t: /, s: '?'}
-  - {t: ',', s: <}
-  - .
-  - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: LGUI}
-  - {t: '@', h: NUMPAD}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:keyboard-space$$
-  - {t: '-', h: NAV, s: _}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  NUMPAD:
-  - $$mdi:apple-keyboard-caps$$
-  - {t: '`', s: '~'}
-  - {t: '''', s: '"'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '=', s: +}
-  - (
-  - )
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - +
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - '{'
-  - '}'
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - '*'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '-', s: _}
-  - {t: \, s: '|'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - .
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-space$$
-  - {t: '-', s: _}
-  - '0'
-  NAV:
-  - EP TOG
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB BRD
-  - RGB BRI
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - PgUp
-  - RGB TOG
-  - RGB EFF
-  - RGB SPD
-  - RGB SPI
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - {t: '-', s: _}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&studio_unlock'
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - _
-  - {t: '=', s: +}
-  - '{'
-  - '}'
-  - '|'
-  - PgDn
-  - {t: QWERTY, h: toggle}
-  - {t: FPS, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-space$$
-  - {type: held}
-  - $$mdi:apple-keyboard-option$$
-  QWERTY:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - LGUI
-  - {t: QWERTY, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-space$$
-  - {t: QWERTY, h: toggle}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  FPS:
-  - $$mdi:keyboard-tab$$
-  - '3'
-  - Q
-  - W
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
-  - '4'
-  - A
-  - S
-  - D
-  - F
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
-  - '5'
-  - Z
-  - X
-  - C
-  - V
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - '6'
-  - G
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - {t: canary, h: toggle}
-  - $$mdi:apple-keyboard-option$$
+  Base:
+  - [ESC, FR A, FR Z, E, R, T]
+  - - Y
+    - U
+    - I
+    - O
+    - P
+    - {t: FR LBRC, h: Functions}
+  - [TAB, FR Q, S, D, '&tdF', G]
+  - [H, '&tdJ', K, L, FR M, FR UGRV]
+  - [LSHFT, FR W, X, C, V, B]
+  - - N
+    - FR COMM
+    - FR SCLN
+    - FR COLN
+    - FR EXLM
+    - {t: FR RBRC, h: RALT}
+  - - LCTRL
+    - Lower
+    - {t: RET, h: LGUI}
+    - {t: SPACE, h: Raise}
+    - BSPC
+    - CAPSLOCK
+  Lower:
+  - [FR TILD, '1', '2', '3', '4', '5']
+  - ['6', '7', '8', '9', '0', F17]
+  - ['`', FR EXLM, FR AT, FR HASH, FR DLR, FR PERC]
+  - [FR CIRC, FR AMPR, FR ASTR, FR LPRN, FR RPRN, F18]
+  - - LSHFT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Gui+F11
+    - Gui+F12
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F14
+  - - Settings
+    - {type: held}
+    - LGUI
+    - KP 1
+    - KP 2
+    - KP 3
+  Raise:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PG UP
+    - UP
+    - PG DN
+    - HOME
+  - [FR CIRC, PG UP, UP, PG DN, HOME, F17]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LEFT
+    - DOWN
+    - RIGHT
+    - END
+  - [FR MINS, LEFT, DOWN, RIGHT, END, F18]
+  - - OUT TOG
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F15
+  - - F16
+    - F23
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - OUT TOG
+  - - {t: ▽, type: trans}
+    - Gui+F11
+    - Gui+F12
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Functions:
+  - [F1, F2, F3, F4, F5, F6]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LALT
+    - LSHFT
+    - LCTRL
+    - {type: held}
+  - [F7, F8, F9, F10, F11, F12]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Settings:
+  - ['&bootloader', '&sys_reset', OUT TOG, '', '', '']
+  - ['', '', '', OUT TOG, '&sys_reset', '&bootloader']
+  - - BT CLR
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+  - - {t: BT, h: '4'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '0'}
+    - BT CLR
+  - ['', KP NUM, '', '', '', '']
+  - ['', '', '', '', '', '']
+  - - {type: held}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
 combos:
-- p: [28, 29]
-  k: {t: '[', s: '{'}
-  l: [canary]
-- p: [30, 31]
-  k: {t: ']', s: '}'}
-  l: [canary]
 - p: [4, 5]
-  k: (
-  l: [canary]
+  k: FR LPRN
 - p: [6, 7]
-  k: )
-  l: [canary]
+  k: FR RPRN
 - p: [16, 17]
-  k: '{'
-  l: [canary]
+  k: FR LBRC
 - p: [18, 19]
-  k: '}'
-  l: [canary]
+  k: FR RBRC
+- p: [28, 29]
+  k: FR LCBR
+- p: [30, 31]
+  k: FR RCBR
+- p: [15, 16]
+  k: FR DQUO
+- p: [19, 20]
+  k: FR QUOT
+- p: [0, 12]
+  k: FR TILD
+- p: [12, 24]
+  k: '`'
+- p: [3, 4]
+  k: FR MINS
+- p: [2, 3]
+  k: FR PLUS
+- p: [7, 8]
+  k: FR UNDS
+- p: [8, 9]
+  k: FR PIPE
