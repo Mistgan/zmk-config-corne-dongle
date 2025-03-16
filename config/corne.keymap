@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors.dtsi>
 #include "keymap_french.h"
+#include <dt-bindings/zmk/rgb.h>
 
 #define DEF 0
 #define LWR 1
@@ -42,6 +43,77 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5>;    // <---[[right-hand keys]]
+        };
+
+        // Tap for Number
+        td_n1: tap_dance_n1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N1>, <&kp LS(N1)>;  
+        };
+
+        td_n2: tap_dance_n2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N2>, <&kp LS(N2)>;  
+        };
+
+        td_n3: tap_dance_n3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N3>, <&kp LS(N3)>;
+        };
+
+        td_n1: tap_dance_n4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N4>, <&kp LS(N4)>;  
+        };
+
+        td_n1: tap_dance_n5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N5>, <&kp LS(N5)>;  
+        };
+
+        td_n1: tap_dance_n6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N6>, <&kp LS(N6)>;  
+        };
+
+        td_n1: tap_dance_n7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N7>, <&kp LS(N7)>;  
+        };
+
+        td_n1: tap_dance_n8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N8>, <&kp LS(N8)>;  
+        };
+
+        td_n1: tap_dance_n9 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N9>, <&kp LS(N9)>;  
+        };
+
+        td_n1: tap_dance_n0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp N0>, <&kp LS(N0)>;  
         };
     };
 
@@ -155,6 +227,24 @@
             key-positions = <8 9>;
             timeout-ms = <20>;
         };
+
+        EqualSign {
+            bindings = <&kp FR_EQL>;
+            key-positions = <9 10>;
+            timeout-ms = <20>;
+        };
+
+        LessSign {
+            bindings = <&kp FR_LABK>;
+            key-positions = <27 28>;
+            timeout-ms = <20>;
+        };
+
+        GreaterSign {
+            bindings = <&kp FR_RABK>;
+            key-positions = <31 32>;
+            timeout-ms = <20>;
+        };
     };
 };
 / {
@@ -171,7 +261,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LSHFT     &kp FR_W       &kp X         &kp C        &kp V         &kp B              &kp N       &kp FR_COMM   &kp FR_SCLN   &kp FR_COLN   &kp FR_EXLM    &mt RALT FR_RBRC
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                            &kp LCTRL     &mo 1        &mt LGUI RET     &lt RSE SPACE   &kp BSPC     &kp CAPSLOCK
+                                                            &kp LCTRL     &mo 1        &mt LGUI SPACE     &kp RET      &lt RSE BSPC  &kp CAPSLOCK
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -185,7 +275,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LSHFT      &trans         &trans        &trans      &kp LG(F11)   &kp LG(F12)         &trans       &trans         &trans        &trans        &trans       &kp F14
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                             &mo ADJ        &trans       &kp LGUI         &kp KP_N1     &kp KP_N2     &kp KP_N3
+                                                             &mo ADJ        &trans       &kp LGUI       &kp LC(BSPC)     &kp DEL     &kp LC(DEL)
             //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -221,7 +311,7 @@
                         display-name = "Settings";
                         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &bootloader    &sys_reset   &out OUT_TOG     &none         &none         &none             &none         &none         &none      &out OUT_TOG   &sys_reset   &bootloader
+                 &bootloader    &sys_reset   &out OUT_TOG &rgb_ug RGB_TOG &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_TOG &out OUT_TOG   &sys_reset   &bootloader
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_SEL 4  &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
